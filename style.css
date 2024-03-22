@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./src/Img/Building.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
