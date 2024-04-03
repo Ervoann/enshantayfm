@@ -43,7 +43,7 @@ body {
 
 .nav > .nav-links {
   display: flex;
-  margin-right: 50px;
+  margin: 0px;
   gap: 20px;
 }
 
@@ -102,6 +102,30 @@ body {
       transform: translateY(-4px);
     }
   }
+
+  .item2 {
+    background-color: transparent;
+    margin: 8px;
+    transition: 0.3s all;
+    width: fit-content;
+    height: 300px;
+
+
+    img {
+      height: 100%;
+      border-radius: 16px;
+      cursor: pointer;
+      filter: contrast(90%);
+      transition: 0.3s all;
+
+      &:hover {
+        filter: contrast(100%);
+      }
+    }
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
 }
 
 button {
@@ -140,54 +164,6 @@ button {
   font-size: 1.5rem;
   margin-top: 50px;
   padding: 0;
-}
-
-
-
-@media (max-width:1080px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
 }
 
 .Button {
@@ -245,4 +221,186 @@ button {
   font-size: 1rem;
 }
 
+
+
+
+
+@media (max-width:1080px) {
+
+  .nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+  }
+
+  .nav-title {
+    font-family: "Abril Fatface", serif;
+    font-weight: bold;
+    color: #002116;
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #002116;
+
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #D9D9D9;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    height: 100%;
+  }
+  .nav > .nav-links > a {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+  }
+
+  .nav > .nav-links > a:last-of-type {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    margin-bottom: 20vh;
+
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+    opacity: 0;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 0px;
+    margin-top: 20px;
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  .container2 .item {
+    background-color: transparent;
+    margin: 8px;
+    transition: 0.3s all;
+    width: 200px;
+    height: 200px;
+
+
+    img {
+      height: 100%;
+      border-radius: 16px;
+      cursor: pointer;
+      filter: contrast(90%);
+      transition: 0.3s all;
+    }
+  }
+
+  .container2 .item2 {
+    background-color: transparent;
+    margin: 8px;
+    transition: 0.3s all;
+    width: fit-content;
+    height: 200px;
+
+
+    img {
+      height: 100%;
+      border-radius: 16px;
+      cursor: pointer;
+      filter: contrast(90%);
+      transition: 0.3s all;
+    }
+  }
+
+  .Titre {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 89%;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #002116;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: 92%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .container img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 16px 16px 0px 0;
+  }
+
+  .container p {
+    width: auto;
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .Desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #002116;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  button {
+    display: none;
+  }
+
+  .container2 {
+    display: flex;
+    overflow:scroll;
+    padding: 8px;
+    width: 95%;
+  }
+
+}
 
