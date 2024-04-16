@@ -18,6 +18,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 10px;
   position: fixed;
@@ -37,14 +38,19 @@ body {
   margin-left: 50px;
 }
 
-.nav > .nav-btn {
+.nav > .nav-mobile > .nav-btn {
   display: none;
 }
 
 .nav > .nav-links {
   display: flex;
   margin: 0px;
-  gap: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content:center;
 }
 
 .nav .nav-links a {
@@ -144,6 +150,11 @@ button {
   gap: 10px;
   justify-content: center;
   margin-right: 50px;
+  height: 50px;
+}
+
+button p {
+  background-color: transparent;
 }
 
 .Player {
@@ -191,28 +202,56 @@ button {
 .container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   width: 95%;
-  height: 300px;
+  height: fit-content;
   background-color: white;
   border-radius: 16px;
 }
 
-.container p {
-  width: 50%;
-  margin: 40px;
+.Left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: fit-content;
+  width: 800px;
+  background-color: transparent;
+  gap: 0px;
+}
+
+.Left p {
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
   background-color: transparent;
 }
 
-
-
-.container img {
-  object-fit: cover;
+.Right {
+  display: flex;
   width: 50%;
-  height: 100%;
-  border-radius: 0 16px 16px 0;
+  background-image: url(./src/Img/Header.png);
+  min-height: 350PX; /* Set minimum height to 100% of viewport height */
+  flex-grow: 1; /* Allow the container to grow and fill available space */
+  align-items: stretch; /* Stretch flex items to fill available height */
+  border-radius: 0px 16px 16px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.Network {
+  display: flex; 
+  background-color: transparent; 
+  margin-left: 36px; 
+  align-items: center; 
+  gap: 10px;
+}
+
+
+
+
 
 .Desc {
   font-family: "Poppins", sans-serif;
@@ -243,22 +282,22 @@ button {
     font-family: "Abril Fatface", serif;
     font-weight: bold;
     color: #002116;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 10px;
   }
 
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
+  
+  .nav > .nav-mobile > .nav-btn {
+    display: flex;
     right: 0px;
     top: 0px;
   }
+
   .nav > .nav-btn > label {
     display: flex;
     flex-direction: column;
     width: 50px;
     height: 50px;
-    padding: 13px;
     justify-content: center;
     align-items: center;
   }
@@ -281,11 +320,13 @@ button {
     top: 50px;
     left: 0px;
     height: 100%;
+    margin-left: 0;
   }
   .nav > .nav-links > a {
     display: flex;
     justify-content: center;
     height: 50%;
+    width: 100%;
   }
 
   .nav > .nav-links > a:last-of-type {
@@ -297,8 +338,10 @@ button {
   }
 
   .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
     opacity: 0;
+    height: 0vh;
+    margin-top: 20px;
+    padding: 0;
   }
   .nav > #nav-check:checked ~ .nav-links {
     display: flex;
@@ -308,6 +351,19 @@ button {
     margin-top: 20px;
     opacity: 1;
     overflow: hidden;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+    gap: 20px;
+    margin-right: 10px;
   }
 
   .container2 .item {
@@ -357,30 +413,53 @@ button {
     padding: 0;
   }
 
+  .Network {
+    margin-bottom: 20px;
+    margin-left: 16px;
+    gap: 20px; 
+  }
+
   .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column-reverse;
-    width: 92%;
+    width: 95%;
     height: fit-content;
     background-color: white;
     border-radius: 16px;
     margin-bottom: 20px;
   }
-
-  .container img {
-    object-fit: cover;
+  
+  .Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: fit-content;
     width: 100%;
-    height: 50%;
-    border-radius: 16px 16px 0px 0;
-  }
-
-  .container p {
-    width: auto;
     background-color: transparent;
-    padding: 20px;
-    margin: 0;
+    gap: 0px;
+  }
+  
+  .Left p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+  }
+  
+  .Right {
+    display: flex;
+    width: 100%;
+    background-image: url(./src/Img/Header.png);
+    min-height: 350PX; /* Set minimum height to 100% of viewport height */
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    align-items: stretch; /* Stretch flex items to fill available height */
+    border-radius: 16px 16px 0px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .Desc {
@@ -392,6 +471,10 @@ button {
   }
 
   button {
+    margin-right: 0;
+  }
+
+  button p {
     display: none;
   }
 
