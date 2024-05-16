@@ -199,6 +199,121 @@ body {
   }
 }
 
+.boite {
+  display: flex;
+  width: 95%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.container5 {
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 16px 0px;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  gap: 10px;
+}
+
+.itemAnimated {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background-image:
+    linear-gradient(to top, rgba(0, 33, 22, 0), rgba(0, 33, 22, 0)),
+    url("./src/Img/Rectangle-01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 300px; 
+  width: 300px; 
+  background-color: transparent;
+  justify-content: flex-end;
+}
+
+.content .Nom {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-left: 20px;
+  margin: 0px;
+  opacity: 0;
+}
+.content .Desc {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  margin: 0px;
+  opacity: 0;
+}
+
+.content .buttonAccueil {
+  background-color: #D9D9D9;
+  color: #002116;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 0;
+  font-style: normal;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 30px;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+
+.itemAnimated:hover {
+  transform: translateY(-15px);
+  transition: 0.5s ease-in-out;
+  background-image:
+    linear-gradient(to top, rgba(0, 33, 22, 1), rgba(0, 33, 22, 0)),
+    url("./src/Img/Rectangle-01.png");
+}
+
+.itemAnimated:hover > .content .Nom, .itemAnimated:hover > .content .Desc, .itemAnimated:hover > .content button{
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+
+
 .button {
   background-color: #002116;
   color: #D9D9D9;
@@ -295,7 +410,16 @@ body {
   opacity: 0;
   position: fixed;
   bottom: 0;
-  z-index: 1000;
+  z-index: 900;
+  transition: 1s ease-in-out;
+}
+
+.Player2 {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 900;
   transition: 1s ease-in-out;
 }
 
@@ -485,8 +609,40 @@ body {
 
 @media (max-width:1080px) {
 
+  .Player {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 79px;
+    z-index: 900;
+    transition: 1s ease-in-out;
+    box-shadow: 0px -4px 28.7px 0px rgba(0, 33, 22, 0.40);
+  }
+
+  .Player2 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 79px;
+    z-index: 900;
+    transition: 1s ease-in-out;
+    box-shadow: 0px -4px 28.7px 0px rgba(0, 33, 22, 0.40);
+  }
+
+  .Bas {
+    margin-bottom: 100px;
+  }
+  .Bas2 {
+    margin-bottom: 200px;
+  }
+  
   .BottomNavigation > div {
     display: flex;
+  }
+
+  .BottomNavigation2 {
+    box-shadow: none;
+    border-radius: 0px;
   }
 
   .nav > .nav-links {
@@ -504,6 +660,7 @@ body {
   .nav {
     width: 95%;
   }
+
 
   .container2 .item {
     background-color: transparent;

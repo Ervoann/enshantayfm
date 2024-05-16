@@ -40,7 +40,7 @@
           <path d="M5.13799 9.5286C5.39834 9.78895 5.39834 10.2111 5.13799 10.4714L3.60939 12H11.3333C11.8637 12 12.3724 11.7893 12.7475 11.4142C13.1225 11.0391 13.3333 10.5304 13.3333 10V8.66667C13.3333 8.29848 13.6317 8 13.9999 8C14.3681 8 14.6666 8.29848 14.6666 8.66667V10C14.6666 10.8841 14.3154 11.7319 13.6903 12.357C13.0652 12.9821 12.2173 13.3333 11.3333 13.3333H3.60939L5.13799 14.8619C5.39834 15.1223 5.39834 15.5444 5.13799 15.8047C4.87764 16.0651 4.45553 16.0651 4.19518 15.8047L1.52851 13.1381C1.26816 12.8777 1.26816 12.4556 1.52851 12.1953L4.19518 9.5286C4.45553 9.26825 4.87764 9.26825 5.13799 9.5286Z" fill="#667A73"/>
         </svg>
         Playlists</a>
-      <a href="" target="_blank">
+      <a href="./Presentation.html">
         <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00008 0C7.29284 0 6.61456 0.280951 6.11446 0.781049C5.61437 1.28115 5.33341 1.95942 5.33341 2.66667V8C5.33341 8.70724 5.61437 9.38552 6.11446 9.88562C6.61456 10.3857 7.29284 10.6667 8.00008 10.6667C8.70732 10.6667 9.3856 10.3857 9.8857 9.88562C10.3858 9.38552 10.6667 8.70724 10.6667 8V2.66667C10.6667 1.95942 10.3858 1.28115 9.8857 0.781049C9.3856 0.280951 8.70732 0 8.00008 0ZM7.05727 1.72386C7.30732 1.47381 7.64646 1.33333 8.00008 1.33333C8.3537 1.33333 8.69284 1.47381 8.94289 1.72386C9.19294 1.97391 9.33342 2.31304 9.33342 2.66667V8C9.33342 8.35362 9.19294 8.69276 8.94289 8.94281C8.69284 9.19286 8.3537 9.33333 8.00008 9.33333C7.64646 9.33333 7.30732 9.19286 7.05727 8.94281C6.80722 8.69276 6.66675 8.35362 6.66675 8V2.66667C6.66675 2.31304 6.80722 1.97391 7.05727 1.72386Z" fill="#667A73"/>
           <path d="M4.00008 6.66667C4.00008 6.29848 3.7016 6 3.33341 6C2.96522 6 2.66675 6.29848 2.66675 6.66667V8C2.66675 9.41449 3.22865 10.771 4.22885 11.7712C5.0706 12.613 6.16475 13.1443 7.33342 13.2915V14.6667H5.33341C4.96522 14.6667 4.66675 14.9651 4.66675 15.3333C4.66675 15.7015 4.96522 16 5.33341 16H10.6667C11.0349 16 11.3334 15.7015 11.3334 15.3333C11.3334 14.9651 11.0349 14.6667 10.6667 14.6667H8.66675V13.2915C9.83541 13.1443 10.9296 12.613 11.7713 11.7712C12.7715 10.771 13.3334 9.41449 13.3334 8V6.66667C13.3334 6.29848 13.0349 6 12.6667 6C12.2986 6 12.0001 6.29848 12.0001 6.66667V8C12.0001 9.06087 11.5787 10.0783 10.8285 10.8284C10.0784 11.5786 9.06095 12 8.00008 12C6.93922 12 5.9218 11.5786 5.17165 10.8284C4.42151 10.0783 4.00008 9.06087 4.00008 8V6.66667Z" fill="#667A73"/>
@@ -137,7 +137,7 @@
           <div class="Episode EpisodeActive" >
             <img src="./src/Img/Rectangle-01.png" width="250px" height="250px" style="border-radius: 16px;">
 
-            <div class="Content">
+            <div class="Content Episode1">
               <p class="TitreEpisode">Queer Stories - Ep01</p>
               <p class="Desc" style="background-color: transparent;">Plongez dans Queer Stories, un podcast captivant qui explore les moments clés de l'histoire queer...</p>
               <button class="buttonPodcast">
@@ -208,7 +208,7 @@
                 </div>
               </div>
     
-              <div class="Episode" style="opacity: 50%;">
+              <div class="Episode Bas" style="opacity: 50%;">
                 <img src="./src/Img/Rectangle-02.png" width="250px" height="250px" style="border-radius: 16px;">
     
                 <div class="Content">
@@ -235,7 +235,6 @@
   const button = document.querySelector('button');
   const player = document.querySelector('.Player');
   const main = document.querySelector('.Bas');
-  const buttonPodcast = document.querySelector('.buttonPodcast')
 
   const Instagram = document.querySelector('.Instagram');
   const Tiktok = document.querySelector('.Tiktok');
@@ -246,6 +245,12 @@
   const Podcasts = document.querySelector('#Podcasts');
   const Playlists = document.querySelector('#Playlists');
   const Presentation = document.querySelector('#Presentation');
+  const nav = document.querySelector('.BottomNavigation');
+  const Episode1 = document.querySelector('.Episode1');
+
+  Episode1.addEventListener('click', function() {
+    window.open('./PodcastTemplate.html', '_self');
+  });
 
   Programmes.addEventListener('click', function() {
     window.open('./homepage.html', '_self');
@@ -262,7 +267,6 @@
   Presentation.addEventListener('click', function() {
     window.open('./Presentation.html', '_self');
   });
-  
   
 
   Instagram.addEventListener('click', function() {
@@ -281,10 +285,6 @@
     window.open('https://twitter.com/enshantayfm','_blank');
   });
 
-  buttonPodcast.addEventListener('click', function() {
-    window.open('./PodcastTemplate.html');
-  });
-
   // Initial state (can be hidden by default)
   player.style.display = "none"; // Or "block" if you want it visible initially
 
@@ -292,11 +292,13 @@
     if (player.style.display === "none") {
       player.style.display = "block";
       player.style.opacity = "1";
-      main.style.marginBottom = "150px";
+      main.classList.add('Bas2');
+      nav.classList.add('BottomNavigation2');
     } else {
       player.style.display = "none";
       player.style.opacity = "0";
-      main.style.marginBottom = "50px"; // Reset main's margin-bottom when hidden
+      main.classList.remove('Bas2');
+      nav.classList.remove('BottomNavigation2');
     }
   });
 
