@@ -226,13 +226,7 @@ body {
   width: 300px;
   height: 300px;
   cursor: pointer;
-  background-image:
-    linear-gradient(to top, rgba(0, 33, 22, 0), rgba(0, 33, 22, 0)),
-    url("./src/Img/Rectangle-01.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
-  border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,6 +234,85 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.Podcast1 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 0), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-QueerStories.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Podcast1 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 1), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-QueerStories.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+
+.Podcast2 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 0), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-RencontresInattendues.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Podcast2 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 1), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-RencontresInattendues.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+.Podcast3 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 0), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-GrosPlan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Podcast3 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 1), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-GrosPlan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+
+.Podcast4 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 0), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-LectureClub.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Podcast4 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 1), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-LectureClub.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
 
 .content {
   display: flex;
@@ -275,8 +348,8 @@ body {
 }
 
 .content .buttonAccueil {
-  background-color: #D9D9D9;
-  color: #002116;
+  background-color: #ffffff;
+  color: #531158;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -302,9 +375,6 @@ body {
 .itemAnimated:hover {
   transform: translateY(-15px);
   transition: 0.5s ease-in-out;
-  background-image:
-    linear-gradient(to top, rgba(0, 33, 22, 1), rgba(0, 33, 22, 0)),
-    url("./src/Img/Rectangle-01.png");
 }
 
 .itemAnimated:hover > .content .Nom, .itemAnimated:hover > .content .Desc, .itemAnimated:hover > .content button{
