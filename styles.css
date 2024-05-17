@@ -132,9 +132,26 @@ body {
   font-size: 10px;
   gap: 0px;
   transition: 0.5s ease-in-out;
-  color: #002116;
-  background-color: #00211610;
+  color: #ffffff;
+  background-color: #002116;
 }
+
+.BottomNavigationElementActive svg path {
+  fill: #ffffff;
+  background-color: #002116;
+}
+
+  .First {
+  border-radius: 16px 0px 0px 0px;
+}
+
+  .Last {
+  border-radius: 0px 16px 0px 0px;
+}
+
+  .NoCorners {
+  border-radius: 0px 0px 0px 0px;
+  }
 
 
 
@@ -313,6 +330,159 @@ body {
 }
 
 
+.Podcast5 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 0), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-AVoixHaute.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Podcast5 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 1), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-AVoixHaute.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+.Podcast6 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 0), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-ParolesQueer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Podcast6 {
+  background-image:
+    linear-gradient(to top, rgba(83, 17, 88, 1), rgba(83, 17, 88, 0)),
+    url("./src/Img/Cover-Podcasts-ParolesQueer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+
+.Slaylist1 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 0), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Slaylist1 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 1), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+
+.Slaylist2 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 0), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Slaylist2 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 1), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+.Slaylist3 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 0), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN03.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Slaylist3 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 1), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN03.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+
+.Slaylist4 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 0), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Slaylist4 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 1), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+.Slaylist5 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 0), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN05.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Slaylist5 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 1), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN05.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+
+.Slaylist6 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 0), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.itemAnimated:hover > .Slaylist6 {
+  background-image:
+    linear-gradient(to top, rgba(17, 33, 88, 1), rgba(17, 33, 88, 0)),
+    url("./src/Img/SlaylistN06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
 
 .content {
   display: flex;
@@ -339,7 +509,7 @@ body {
   color: #ffffff;
   font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
   padding-left: 20px;
   padding-bottom: 5px;
@@ -371,6 +541,30 @@ body {
   width: fit-content;
 }
 
+.content .buttonAccueil2 {
+  background-color: #ffffff;
+  color: #112158;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 0;
+  font-style: normal;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 30px;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
 
 .itemAnimated:hover {
   transform: translateY(-15px);
@@ -380,6 +574,29 @@ body {
 .itemAnimated:hover > .content .Nom, .itemAnimated:hover > .content .Desc, .itemAnimated:hover > .content button{
   opacity: 1;
   transition: 0.5s ease-in-out;
+}
+
+.container6 {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction: row;
+  width: 95%;
+  height: fit-content;
+  margin-top: 30px;
+}
+
+.container6 img {
+  height: 300px;
+  border-radius: 16px;
+  cursor: pointer;
+  filter: contrast(90%);
+  transition: 0.3s all;
+
+  &:hover {
+    transform: translateY(-15px);
+    transition: 0.5s ease-in-out;
+  }
 }
 
 
@@ -504,6 +721,21 @@ body {
   color: #002116;
   font-size: 1.5rem;
   margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.PresentationTitre {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 95%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #002116;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 0px;
   padding: 0;
 }
 
@@ -574,7 +806,20 @@ body {
 .Right2 {
   display: flex;
   width: 50%;
-  background-image: url(./src/Img/Cover-Playlist.png);
+  background-image: url(./src/Img/BannerMusic.jpg);
+  min-height: 350PX; /* Set minimum height to 100% of viewport height */
+  flex-grow: 1; /* Allow the container to grow and fill available space */
+  align-items: stretch; /* Stretch flex items to fill available height */
+  border-radius: 0px 16px 16px 0px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Right3 {
+  display: flex;
+  width: 50%;
+  background-image: url(./src/Img/LogoPatern.png);
   min-height: 350PX; /* Set minimum height to 100% of viewport height */
   flex-grow: 1; /* Allow the container to grow and fill available space */
   align-items: stretch; /* Stretch flex items to fill available height */
@@ -601,6 +846,16 @@ body {
   font-weight: 400;
   color: #002116;
   font-size: 1rem;
+}
+
+.PresentationText{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #002116;
+  font-size: 1rem;
+  display: flex;
+  width: 95%;
+  text-align: justify;
 }
 
 
@@ -679,6 +934,24 @@ body {
 
 @media (max-width:1080px) {
 
+  .container6{
+  display: flex;
+  overflow:scroll;
+  padding: 8px;
+  width: 95%;
+  margin-top: 5px;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & .item2 img {
+    height: 200px;
+    margin:  8px;
+  }
+}
+
   .itemAnimated {
     width: 200px;
     height: 200px;
@@ -732,7 +1005,31 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    justify-content: center;
+    height: 30px;
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+
+  .content .buttonAccueil2 {
+    background-color: #D9D9D9;
+    color: #112158;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 0;
+    font-style: normal;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     justify-content: center;
     height: 30px;
     opacity: 0;
@@ -787,7 +1084,8 @@ body {
     font-weight: bold;
     color: #002116;
     font-size: 1.5rem;
-    margin: 0px;
+    margin-left: 10px;
+
   }
 
   .nav {
@@ -840,6 +1138,29 @@ body {
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
+  }
+
+  .PresentationTitre {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 93%;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #002116;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .PresentationText{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #002116;
+    font-size: 0.8rem;
+    display: flex;
+    width: 93%;
+    text-align: justify;
   }
 
   .Network {
@@ -897,7 +1218,20 @@ body {
   .Right2 {
     display: flex;
     width: 100%;
-    background-image: url(./src/Img/Cover-Playlist.png);
+    background-image: url(./src/Img/BannerMusic.jpg);
+    min-height: 350PX; /* Set minimum height to 100% of viewport height */
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    align-items: stretch; /* Stretch flex items to fill available height */
+    border-radius: 16px 16px 0px 0px;
+    background-position:bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Right3 {
+    display: flex;
+    width: 100%;
+    background-image: url(./src/Img/LogoPatern.png);
     min-height: 350PX; /* Set minimum height to 100% of viewport height */
     flex-grow: 1; /* Allow the container to grow and fill available space */
     align-items: stretch; /* Stretch flex items to fill available height */
@@ -913,10 +1247,11 @@ body {
     color: #002116;
     font-size: 0.8rem;
     text-align: justify;
+    line-height: 1.2;
   }
 
   .button {
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   .container2 {
