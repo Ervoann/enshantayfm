@@ -632,7 +632,7 @@ body {
 }
 
 .buttonPodcast {
-  background-color: #002116;
+  background-color: #531158;
   color: #D9D9D9;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -657,7 +657,37 @@ body {
 
 .buttonPodcast:hover {
   scale: 0.98;
-  background-color: #002116d7;
+  background-color: #53115880;
+  transition: 0.5s ease-in-out;
+}
+
+.buttonSlaylist {
+  background-color: #112158;
+  color: #D9D9D9;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-right: 50px;
+  height: 50px;
+  transition: 0.5s ease-in-out;
+}
+
+.buttonSlaylist p {
+  background-color: transparent;
+}
+
+.buttonSlaylist:hover {
+  scale: 0.98;
+  background-color: #11215880;
   transition: 0.5s ease-in-out;
 }
 
@@ -803,6 +833,19 @@ body {
   background-size: cover;
 }
 
+.Right1 {
+  display: flex;
+  width: 50%;
+  background-image: url(./src/Img/BannerQulture.jpg);
+  min-height: 350PX; /* Set minimum height to 100% of viewport height */
+  flex-grow: 1; /* Allow the container to grow and fill available space */
+  align-items: stretch; /* Stretch flex items to fill available height */
+  border-radius: 0px 16px 16px 0px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .Right2 {
   display: flex;
   width: 50%;
@@ -825,6 +868,20 @@ body {
   align-items: stretch; /* Stretch flex items to fill available height */
   border-radius: 0px 16px 16px 0px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.Right4 {
+  display: flex;
+  width: 50%;
+  background-image: url(./src/Img/Cover-Podcasts-QueerStoriesBanner.jpg);
+  min-height: 350PX; /* Set minimum height to 100% of viewport height */
+  flex-grow: 1; /* Allow the container to grow and fill available space */
+  align-items: stretch; /* Stretch flex items to fill available height */
+  border-radius: 0px 16px 16px 0px;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -920,7 +977,16 @@ body {
 .TitreEpisode {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  color: #002116;
+  color: #531158;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.TitreEpisode2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #112158;
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
@@ -933,6 +999,25 @@ body {
 
 
 @media (max-width:1080px) {
+
+  .TitreEpisode2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #112158;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    height: 100%;
+  }
 
   .container6{
   display: flex;
@@ -1215,6 +1300,19 @@ body {
     background-size: cover;
   }
 
+  .Right1 {
+    display: flex;
+    width: 100%;
+    background-image: url(./src/Img/BannerQulture.jpg);
+    min-height: 350PX; /* Set minimum height to 100% of viewport height */
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    align-items: stretch; /* Stretch flex items to fill available height */
+    border-radius: 16px 16px 0px 0px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .Right2 {
     display: flex;
     width: 100%;
@@ -1237,6 +1335,19 @@ body {
     align-items: stretch; /* Stretch flex items to fill available height */
     border-radius: 16px 16px 0px 0px;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Right4 {
+    display: flex;
+    width: 100%;
+    background-image: url(./src/Img/Cover-Podcasts-QueerStoriesBanner.jpg);
+    min-height: 350PX; /* Set minimum height to 100% of viewport height */
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    align-items: stretch; /* Stretch flex items to fill available height */
+    border-radius: 16px 16px 0px 0px;
+    background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1271,6 +1382,9 @@ body {
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 50px;
+    width: 95%;
+    align-items: center;
+    padding: 0;
   }
 
   .Episode {
@@ -1291,7 +1405,7 @@ body {
   }
 
   .buttonPodcast {
-    background-color: #002116;
+    background-color: #531158;
     color: #D9D9D9;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
@@ -1318,7 +1432,39 @@ body {
   
   .buttonPodcast:hover {
     scale: 0.98;
-    background-color: #002116d7;
+    background-color: #53115880;
+    transition: 0.5s ease-in-out;
+  }
+
+  .buttonSlaylist {
+    background-color: #112158;
+    color: #D9D9D9;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 50px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    width: 100%;
+  }
+  
+  .buttonSlaylist p {
+    background-color: transparent;
+  }
+  
+  .buttonSlaylist:hover {
+    scale: 0.98;
+    background-color: #11215880;
     transition: 0.5s ease-in-out;
   }
 
