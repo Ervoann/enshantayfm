@@ -586,6 +586,8 @@ body {
   margin-top: 30px;
 }
 
+
+
 .container6 img {
   height: 300px;
   border-radius: 16px;
@@ -751,7 +753,7 @@ body {
   color: #002116;
   font-size: 1.5rem;
   margin-top: 50px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -886,12 +888,29 @@ body {
   background-size: cover;
 }
 
+.Right5 {
+  display: flex;
+  width: 100%;
+  background-image: url(./src/Img/SlaylistN01.png);
+  min-height: 350PX; /* Set minimum height to 100% of viewport height */
+  flex-grow: 1; /* Allow the container to grow and fill available space */
+  align-items: stretch; /* Stretch flex items to fill available height */
+  border-radius: 0px 16px 16px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .Network {
   display: flex; 
   background-color: transparent; 
   margin-left: 36px; 
   align-items: center; 
   gap: 10px;
+}
+
+.Network:hover > svg {
+  cursor: pointer;
 }
 
 
@@ -952,6 +971,18 @@ body {
   background-color: transparent;
 }
 
+.Playlist {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  gap : 20px;
+  transition: 0.35s;
+  background-color: transparent;
+}
+
 .EpisodeActive{
   transition: 0.35s;
 }
@@ -973,6 +1004,18 @@ body {
   height: fit-content;
   height: 100%;
 }
+
+.Content2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: auto;
+  height: fit-content;
+  height: 100%;
+  gap: 0px;
+}
+
 
 .TitreEpisode {
   font-family: "Poppins", sans-serif;
@@ -1199,7 +1242,6 @@ body {
     background-color: transparent;
     margin: 8px;
     transition: 0.3s all;
-    width: fit-content;
     height: 200px;
 
 
@@ -1248,14 +1290,8 @@ body {
     text-align: justify;
   }
 
-  .Network {
-    margin-bottom: 20px;
-    gap: 20px; 
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+
 
   .container {
     display: flex;
@@ -1343,6 +1379,19 @@ body {
     display: flex;
     width: 100%;
     background-image: url(./src/Img/Cover-Podcasts-QueerStoriesBanner.jpg);
+    min-height: 350PX; /* Set minimum height to 100% of viewport height */
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    align-items: stretch; /* Stretch flex items to fill available height */
+    border-radius: 16px 16px 0px 0px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Right5 {
+    display: flex;
+    width: 100%;
+    background-image: url(./src/Img/SlaylistN01.png);
     min-height: 350PX; /* Set minimum height to 100% of viewport height */
     flex-grow: 1; /* Allow the container to grow and fill available space */
     align-items: stretch; /* Stretch flex items to fill available height */
