@@ -3,6 +3,15 @@
   
 }
 
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -160,6 +169,7 @@ body {
   overflow:scroll;
   padding: 8px;
   width: 96%;
+  animation: fadeIn 1s ease-in-out;
 
   &::-webkit-scrollbar {
     display: none;
@@ -224,6 +234,7 @@ body {
   position: relative;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .container5 {
@@ -237,6 +248,7 @@ body {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   gap: 10px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .itemAnimated {
@@ -250,6 +262,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .Podcast1 {
@@ -584,6 +597,7 @@ body {
   width: 95%;
   height: fit-content;
   margin-top: 30px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 
@@ -755,6 +769,7 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
   padding: 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .PresentationTitre {
@@ -769,6 +784,7 @@ body {
   margin-top: 20px;
   margin-bottom: 0px;
   padding: 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .Button {
@@ -791,6 +807,7 @@ body {
   flex-direction: column;
   margin-top: 100px;
   width: 100%;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .container {
@@ -901,6 +918,19 @@ body {
   background-size: cover;
 }
 
+.Right6 {
+  display: flex;
+  width: 50%;
+  background-image: url(./src/Img/Cover-Podcasts-ParolesQueer.jpg);
+  min-height: 350PX; /* Set minimum height to 100% of viewport height */
+  flex-grow: 1; /* Allow the container to grow and fill available space */
+  align-items: stretch; /* Stretch flex items to fill available height */
+  border-radius: 0px 16px 16px 0px;
+  background-position: 25% 93%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .Network {
   display: flex; 
   background-color: transparent; 
@@ -910,6 +940,18 @@ body {
 }
 
 .Network:hover > svg {
+  cursor: pointer;
+}
+
+.Network2 {
+  display: flex; 
+  background-color: transparent; 
+  margin-left: 36px; 
+  align-items: center; 
+  gap: 10px;
+}
+
+.Networ2:hover > svg {
   cursor: pointer;
 }
 
@@ -932,6 +974,7 @@ body {
   display: flex;
   width: 95%;
   text-align: justify;
+  animation: fadeIn 1s ease-in-out;
 }
 
 
@@ -956,6 +999,7 @@ body {
   height: fit-content;
   gap: 40px;
   margin-bottom: 50px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 
@@ -1037,6 +1081,13 @@ body {
 
 .BottomNavigation > div {
   display: none;
+}
+
+.Bas {
+  margin-bottom: 100px;
+}
+.Bas2 {
+  margin-bottom: 200px;
 }
 
 
@@ -1278,6 +1329,7 @@ body {
     font-size: 1.3rem;
     margin: 0;
     padding: 0;
+    animation: fadeIn 1s ease-in-out;
   }
 
   .PresentationText{
@@ -1288,6 +1340,7 @@ body {
     display: flex;
     width: 93%;
     text-align: justify;
+    animation: fadeIn 1s ease-in-out;
   }
 
 
@@ -1303,6 +1356,7 @@ body {
     background-color: white;
     border-radius: 16px;
     margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
   }
   
   .Left {
@@ -1379,6 +1433,19 @@ body {
     display: flex;
     width: 100%;
     background-image: url(./src/Img/Cover-Podcasts-QueerStoriesBanner.jpg);
+    min-height: 350PX; /* Set minimum height to 100% of viewport height */
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    align-items: stretch; /* Stretch flex items to fill available height */
+    border-radius: 16px 16px 0px 0px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Right6 {
+    display: flex;
+    width: 100%;
+    background-image: url(./src/Img/Cover-Podcasts-ParolesQueer.jpg);
     min-height: 350PX; /* Set minimum height to 100% of viewport height */
     flex-grow: 1; /* Allow the container to grow and fill available space */
     align-items: stretch; /* Stretch flex items to fill available height */
@@ -1468,11 +1535,11 @@ body {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    margin-right: 50px;
     height: 50px;
     transition: 0.5s ease-in-out;
     display: flex;
     width: 100%;
+    margin: 0px;
   }
   
   .buttonPodcast p {
@@ -1505,6 +1572,7 @@ body {
     transition: 0.5s ease-in-out;
     display: flex;
     width: 100%;
+    margin: 0px;
   }
   
   .buttonSlaylist p {
@@ -1515,6 +1583,39 @@ body {
     scale: 0.98;
     background-color: #11215880;
     transition: 0.5s ease-in-out;
+  }
+
+  .Network2 {
+    display: flex; 
+    background-color: transparent; 
+    align-items: center; 
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .Network2 .Episode1 {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+  
+  
+  .Network2:hover > svg {
+    cursor: pointer;
+  }
+
+  .Network {
+    display: flex; 
+    background-color: transparent; 
+    align-items: center; 
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
   }
 
 }
