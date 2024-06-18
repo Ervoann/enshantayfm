@@ -744,7 +744,7 @@ body {
   position: fixed;
   bottom: 0;
   z-index: 900;
-  transition: 1s ease-in-out;
+  transition: 3s ease-in-out;
 }
 
 .Player2 {
