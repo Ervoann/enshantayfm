@@ -596,6 +596,7 @@ body {
   width: 98%;
   margin-top: 5px;
   box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
 
   &::-webkit-scrollbar {
     display: none;
