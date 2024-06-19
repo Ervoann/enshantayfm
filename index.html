@@ -99,10 +99,10 @@
         <div class="container" style="background-color: white;">
          
           <div class="Left">
-            <p class="Desc">Enshantay est un projet de web-radio du bachelor CGDD de Télécom Saint-étienne. <br>  <br> Son objectif est de mettre en avant les luttes LGBTQ+ en donnant la parole à des personnes concernées. À travers des micro-trottoir, des émissions thématiques ainsi que des playlists mettant en avant des artistes queers.:</p>
+            <p class="Desc">Enshantay est un projet de web-radio du bachelor CGDD de Télécom Saint-étienne. <br>  <br> Son objectif est de mettre en avant les luttes LGBTQ+ en donnant la parole à des personnes concernées. À travers des micro-trottoir, des émissions thématiques ainsi que des playlists mettant en avant des artistes queers.</p>
 
             <div style="display: flex; flex-direction: column; background-color: transparent;">
-              <p class="Desc">Retrouvez-nous sur les réseaux sociaux </p>
+              <p class="Desc">Retrouvez-nous sur les réseaux sociaux :</p>
               <div class="Network">
 
                 <svg class="Instagram" width="30" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;">
@@ -139,7 +139,7 @@
           <div class="item2 Music">
             <img src="./src/Img/BannerMusic.jpg">
           </div>
-          <div class="item2">
+          <div class="item2 Histoire">
             <img src="./src/Img/BannerHistoire.jpg">
           </div>
         </div>
@@ -472,6 +472,21 @@
   const Podcasts = document.querySelector('#Podcasts');
   const Playlists = document.querySelector('#Playlists');
   const Presentation = document.querySelector('#Presentation');
+  const Qulture = document.querySelector('.Qulture');
+  const Music = document.querySelector('.Music');
+  const Histoire = document.querySelector('.Histoire');
+
+  Qulture.addEventListener('click', function() {
+    window.open('./Podcasts.html', '_self');
+  });
+
+  Music.addEventListener('click', function() {
+    window.open('./Slaylists.html', '_self');
+  });
+
+  Histoire.addEventListener('click', function() {
+    window.open('./Presentation.html', '_self');
+  });
 
 
   Programmes.addEventListener('click', function() {
